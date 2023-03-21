@@ -1,18 +1,13 @@
-<!DOCTYPE foo [ <!ELEMENT foo ANY >
-<!ENTITY xxe SYSTEM "php://filter/read=convert.base64-encode/resource=index.php" >]>
- 
+<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
+ 
 <channel>
  <title>RSS Title</title>
- <description>This is an example of an RSS feed</description>
  <link>http://www.example.com/main.html</link>
- <lastBuildDate>Mon, 06 Sep 2010 00:01:00 +0000 </lastBuildDate>
- <pubDate>Sun, 06 Sep 2009 16:20:00 +0000</pubDate>
- <ttl>1800</ttl>
- 
+ <description>This is an example of an RSS feed</description>
  <item> 
-  <title> &xxe; </title>
+  <title>XML</title>
  </item>
- 
 </channel>
+ 
 </rss>
